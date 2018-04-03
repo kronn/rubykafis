@@ -200,30 +200,45 @@ Frohe Weihnachten, schöne Ferien und haben Sie Spaß an der Programmierung mit 
 ----
 
 # rescue/else/ensure in Blöcken
+## wie in Methoden schon jetzt
 
-* wie in Methoden schon jetzt
+```ruby
+block_method do |arg|
+  arg.upcase
+rescue => e
+  puts "Cannot upcase #{arg}, Rescued #{e.class}"
+  arg
+end
+```
 
 <!-- .slide: class="master04" -->
 
 ----
 
 # yield_self
+## ähnlich #tap, aber ändert den Return-Value
 
-* siehe #tap, nur mit Return-Value
+```ruby
+[1, 2, 3].yield_self do |o|
+  puts o.inspect
+  [4, 5, 6]
+end
+
+#=> [4, 5, 6]
+```
 
 <!-- .slide: class="master04" -->
 
 ----
 
 # Enumerable#any?, all?, none? und one?
+## können Regex verwenden
 
-* können Regex verwenden
+```ruby
+%w[ant bear cat].any?(/dog/i) #=> false
+%w[ant bear cat].any?(/cat/i) #=> true
+```
 
-<!-- .slide: class="master04" -->
-
-----
-
-# pp wird automatisch geladen
 
 <!-- .slide: class="master04" -->
 
