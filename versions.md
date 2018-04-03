@@ -129,29 +129,43 @@ Frohe Weihnachten, schöne Ferien und haben Sie Spaß an der Programmierung mit 
 
 # binding.irb
 
+<ul>
+<li class="fragment">fast wie binding.pry
+<li class="fragment">eher eine IRB
+<li class="fragment">weniger luxus, aber immer vorhanden
+</ul>
+
 <!-- .slide: class="master03" -->
 
 ----
 
 # Integer
+## Fixnum | Bignum
 
-Fixnum + Bignum
+<ul>
+<li class="fragment">Fixnum und Bignum sind deprecated
+<li class="fragment">Ruby-Code warnt
+<li class="fragment">C-Code bricht
+</ul>
 
 <!-- .slide: class="master03" -->
 
 ----
 
-# Unicode
+# Unicode-Handling
 
-* case-sensitive
+```ruby
+'Håkon René Piñioça'.upcase #=> HÅKON RENÉ PIÑIOÇA
+```
 
 <!-- .slide: class="master03" -->
 
 ----
 
 # Performance
+## weniger temporäre Objekte
 
-* Array#min Array#max
+* Array#min, Array#max
 * Regexp#match?
 
 <!-- .slide: class="master03" -->
@@ -160,8 +174,8 @@ Fixnum + Bignum
 
 # Debugging
 
-* Thread#report_on_exception (statt report-on-GC)
-* Deadlock-Erkennung
+* Thread#report_on_exception<br />(statt report-on-GC)
+* Deadlock-Erkennung für Threads
 
 <!-- .slide: class="master03" -->
 
