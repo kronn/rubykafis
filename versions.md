@@ -88,7 +88,7 @@ config = { language: { ruby: { version: '2.3.0' } } }
 
 config.dig(:language, :ruby, :version)    #=> 2.3.0
 config.dig(:language, :python, :version)  #=> nil
-
+config.dig(:language, @user_language.to_sym, :version)
 ```
 
 <!-- .slide: class="master02" -->
@@ -109,13 +109,13 @@ config.dig(:language, :python, :version)  #=> nil
 
 ----
 
-Mit diesen Änderungen wurden seit Ruby 2.2.0
+Mit diesen Änderungen wurden seit Ruby&nbsp;2.2.0
 
 * 2946 Dateien geändert.
 * 104057 Einfügungen(+)
 * 59478 Löschungen(-)
 
-Frohe Weihnachten, schöne Ferien und haben Sie Spaß an der Programmierung mit Ruby 2.3!
+Frohe Weihnachten, schöne Ferien und haben Sie Spaß an der Programmierung mit Ruby&nbsp;2.3!
 
 <!-- .slide: class="master02" -->
 
@@ -181,13 +181,13 @@ Frohe Weihnachten, schöne Ferien und haben Sie Spaß an der Programmierung mit 
 
 ----
 
-Mit diesen Änderungen wurden seit Ruby 2.3.0
+Mit diesen Änderungen wurden seit Ruby&nbsp;2.3.0
 
 * 2523 Dateien geändert.
 * 289129 Einfügungen(+)
 * 84670 Löschungen(-)
 
-Frohe Weihnachten, schöne Ferien und haben Sie Spaß an der Programmierung mit Ruby 2.4!
+Frohe Weihnachten, schöne Ferien und haben Sie Spaß an der Programmierung mit Ruby&nbsp;2.4!
 
 <!-- .slide: class="master03" -->
 
@@ -249,15 +249,36 @@ end
 * neuester Aufruf zuletzt
 * nur im Terminal/TTY
 
+```text
+Traceback (most recent call last):
+	2: from /path/to/test25.rb:49:in `<main>'
+	1: from /path/to/test25.rb:42:in `second'
+/path/to/test25.rb:38:in `first': undefined method `fist' for [2, 3]:Array (NoMethodError)
+Did you mean?  first
+```
+
 <!-- .slide: class="master04" -->
 
 ----
 
 # Performance
 
-* Tracepoint-API entfernt
-* lazy proc allocation
-* ERB 2x schneller
+<ul>
+<li class="fragment">Tracepoint-API entfernt (5 - 10%)
+<li class="fragment">Mutex ist kleiner & schneller
+<li class="fragment">lazy block/proc allocation (3x schneller)
+<li class="fragment">ERB 2x schneller
+<li class="fragment">Array#concat, Enumerable#sort_by, String#concat, String#index, Time#+…
+</ul>
+
+<!-- .slide: class="master04" -->
+
+----
+
+# StdLib -> StdGems
+
+cmath, csv, date, dbm, etc, fcntl, fiddle, fileutils, gdbm, ipaddr, scanf,
+sdbm, stringio, strscan, webrick, zlib
 
 <!-- .slide: class="master04" -->
 
@@ -265,36 +286,34 @@ end
 
 # Unter der Haube
 
-* SecureRandom nutzt OS-Zufall
-* RDoc-Update -> schnellerer Lexer, schnellere Doku
-* Unicode 10.0
-* Thread#report_on_exception = true
+<ul>
+<li class="fragment">SecureRandom nutzt OS-Zufall
+<li class="fragment">RDoc-Update -> schnellerer Lexer, schnellere Doku
+<li class="fragment">Unicode 10.0.0
+<li class="fragment">Thread#report_on_exception = true
+</ul>
 
 <!-- .slide: class="master04" -->
 
 ----
 
-Mit diesen Änderungen wurden seit Ruby 2.4.0
+Mit diesen Änderungen wurden seit Ruby&nbsp;2.4.0
 
 * 6158 Dateien geändert.
 * 348484 Einfügungen(+)
 * 82747 Löschungen(-)
 
-Frohe Weihnachten, schöne Feiertage und viel Spaß bei der Programmierung mit Ruby 2.5!
+Frohe Weihnachten, schöne Feiertage und viel Spaß bei der Programmierung mit Ruby&nbsp;2.5!
 
 <!-- .slide: class="master04" -->
 
 ---
 
-# Fin.
-
-<!-- .slide: class="master05" -->
-
-----
-
 # Merci vielmol
 
-<!-- .slide: class="master05" -->
+<img src="ruby.png" alt="The Ruby Logo" height="200px">
+
+<!-- .slide: class="master01" -->
 
 ----
 
@@ -302,4 +321,4 @@ Frohe Weihnachten, schöne Feiertage und viel Spaß bei der Programmierung mit R
 
 * https://ruby-lang.org
 
-<!-- .slide: class="master05" -->
+<!-- .slide: class="master01" -->
