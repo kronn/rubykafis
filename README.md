@@ -15,3 +15,5 @@ Revealjs Dokumentation: https://github.com/hakimel/reveal.js
 # Licenses
 
 The Ruby-Logo is under a [CC-BY-SA License](LOGO-LICENSE)
+
+The Presentation is under the [MIT-License](LICENSE)
