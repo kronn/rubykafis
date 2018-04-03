@@ -41,11 +41,38 @@ anheben, sind immer API-kompatibel.
 
 # frozen_string_literal: true
 
+```ruby
+# frozen_string_literal: true
+'direct modification'.upcase!
+
+#=> RuntimeError "can't modify frozen String"
+```
+
+```ruby
+# frozen_string_literal: true
+'return modification'.upcase
+
+#=> FROZEN STRING
+```
+
 <!-- .slide: class="master02" -->
 
 ----
 
 # &.
+## the loneliness-Operator
+
+```ruby
+nil.name
+
+#=> NoMethodError "undefined method `name' for nil:NilClass"
+```
+
+```ruby
+nil&.name
+
+#=> nil
+```
 
 <!-- .slide: class="master02" -->
 
@@ -53,11 +80,27 @@ anheben, sind immer API-kompatibel.
 
 # Array#dig, Hash#dig
 
+```ruby
+config = { language: { ruby: { version: '2.3.0' } } }
+
+config.dig(:language, :ruby, :version)    #=> 2.3.0
+config.dig(:language, :python, :version)  #=> nil
+
+```
+
 <!-- .slide: class="master02" -->
 
 ----
 
 # did_you_mean
+
+```ruby
+[1, 2, 3].mix
+
+#=> NoMethodError "undefined method `mix' for [1, 2, 3]:Array"
+#   Did you mean?  min
+#                  max
+```
 
 <!-- .slide: class="master02" -->
 
