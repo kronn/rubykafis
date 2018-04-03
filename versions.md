@@ -4,8 +4,11 @@
 
 ----
 
-# Previously, in the Ruby-Changelog…
-## 2.3 bis 2.5
+# Was bisher geschah…
+## eine Reise durch die Changelogs
+
+<img src="ruby.png" alt="The Ruby Logo" height="200px">
+
 
 <!-- .slide: class="master01" -->
 
