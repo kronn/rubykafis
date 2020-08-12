@@ -5,7 +5,8 @@
   "scripts": {
     "start": "npm-run-all --parallel build reveal-md",
     "build": "node-sass --watch theme/source/puzzle.scss theme/puzzle.css",
-    "reveal-md": "reveal-md hanami.md --theme puzzle"
+    "reveal-md": "reveal-md versions.md --theme puzzle",
+    "versions-2020": "reveal-md versions-2020.md"
   },
   "repository": {
     "type": "git",
