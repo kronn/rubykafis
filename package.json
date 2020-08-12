@@ -17,8 +17,7 @@
   },
   "homepage": "https://github.com/puzzle/pitc-revealjs-theme#readme",
   "devDependencies": {
-    "node-sass": "^3.8.0",
-    "npm-run-all": "^2.2.0",
-    "reveal-md": "0.0.29"
+    "reveal-md": "^4.1.2",
+    "node-sass": "^4.12.0"
   }
 }

@@ -1,62 +1,4 @@
-/**
- * A simple theme for reveal.js presentations, similar
- * to the default theme. The accent color is darkblue.
- *
- * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
- * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
- */
-
-
-// Default mixins and settings -----------------
-@import "../template/mixins";
-@import "../template/settings";
-// ---------------------------------------------
-
-
-
-// Include theme-specific fonts
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500);
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
-
-
-// Override theme settings (see ../template/settings.scss)
-// Background of the presentation
-$backgroundColor: #fff;
-
-// Primary/body text
-$mainFont: 'Roboto', sans-serif;
-$mainFontSize: 3rem;
-$mainColor: #444;
-
-// Vertical spacing between blocks of text
-$blockMargin: 2.5rem;
-
-// Headings
-$headingMargin: 0 0 $blockMargin 0;
-$headingFont: 'Roboto Slab', serif;
-$headingColor: $mainColor;
-$headingLineHeight: 1.5em;
-$headingLetterSpacing: normal;
-$headingTextTransform: none;
-$headingTextShadow: none;
-$headingFontWeight: normal;
-$heading1TextShadow: $headingTextShadow;
-
-$heading1Size: 6rem;
-$heading2Size: 4rem;
-$heading3Size: 3rem;
-$heading4Size: 2rem;
-
-// Links and actions
-$linkColor: #333;
-$linkColorHover: #111;
-
-// Text selection
-$selectionBackgroundColor: #69B978;
-$selectionColor: #fff;
-
-
-
+// Base theme template for reveal.js
 
 /*********************************************
  * GLOBAL STYLES
@@ -70,12 +12,8 @@ body {
 .reveal {
   font-family: $mainFont;
   font-size: $mainFontSize;
-  font-weight: 300;
+  font-weight: normal;
   color: $mainColor;
-}
-
-.reveal.has-dark-background {
-  color: #fff;
 }
 
 ::selection {
@@ -94,27 +32,24 @@ body {
  * HEADERS
  *********************************************/
 
-.reveal {
-  & #{headings(1,6)} {
-    margin: $headingMargin;
-    color: $headingColor;
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: $headingMargin;
+  color: $headingColor;
 
-    font-family: $headingFont;
-    font-weight: $headingFontWeight;
-    line-height: $headingLineHeight;
-    letter-spacing: $headingLetterSpacing;
+  font-family: $headingFont;
+  font-weight: $headingFontWeight;
+  line-height: $headingLineHeight;
+  letter-spacing: $headingLetterSpacing;
 
-    text-transform: $headingTextTransform;
-    text-shadow: $headingTextShadow;
+  text-transform: $headingTextTransform;
+  text-shadow: $headingTextShadow;
 
-    word-wrap: break-word;
-  }
-}
-
-.reveal.has-dark-background {
-  & #{headings(1,6)} {
-    color: #fff;
-  }
+  word-wrap: break-word;
 }
 
 .reveal h1 {font-size: $heading1Size; }
@@ -286,9 +221,6 @@ body {
   vertical-align: top;
 }
 
-.reveal .text-left {
-  text-align: left;
-}
 
 /*********************************************
  * LINKS
@@ -297,10 +229,6 @@ body {
 .reveal a {
   color: $linkColor;
   text-decoration: none;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.3) 50%);
-  background-repeat: repeat-x;
-  background-size: 2px 2px;
-  background-position: 0 1.2em;
 
   -webkit-transition: color .15s ease;
      -moz-transition: color .15s ease;
@@ -313,16 +241,6 @@ body {
     border: none;
   }
 
-  .reveal.has-dark-background {
-    a {
-      color: #eee;
-      background-image: linear-gradient(to bottom, rgba(255,255,255,0) 50%, rgba(255,255,255,0.3) 50%);
-    }
-    a:hover {
-      color: #fff;
-    }
-  }
-
 .reveal .roll span:after {
   color: #fff;
   background: darken( $linkColor, 15% );
@@ -333,10 +251,11 @@ body {
  * IMAGES
  *********************************************/
 
-.reveal section img.thumbnail {
+.reveal section img {
   margin: 15px 0px;
   background: rgba(255,255,255,0.12);
   border: 4px solid $mainColor;
+
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -418,79 +337,3 @@ body {
 }
 
 
-/*********************************************
- * SLIDE MASTER
- *********************************************/
-.reveal .slide-background.master-white {
-  background-color: #fff;
-  background-repeat: no-repeat;
-}
-
-.reveal .slide-background.master01 {
-  background: url('../../lib/img/01_corner_bottom_right.svg') bottom right,
-              url('../../lib/img/01_corner_top_left.svg') top left;
-  background-color: #1E5A96;
-  background-repeat: no-repeat;
-}
-.master01 ~ section {
-  #{headings(1,6)} {
-    color: #1E5A96;
-  }
-}
-
-.reveal .slide-background.master02 {
-  background: url('../../lib/img/02_corner_top_right.svg') top right,
-              url('../../lib/img/02_corner_top_left.svg') top left;
-  background-color: #3B7BBE;
-  background-repeat: no-repeat;
-}
-.master02 ~ section {
-  #{headings(1,6)} {
-    color: #3B7BBE;
-  }
-}
-
-.reveal .slide-background.master03 {
-  background: url('../../lib/img/03_corner_top_right.svg') top right,
-              url('../../lib/img/03_corner_top_left.svg') top left;
-  background-color: #238BCA;
-  background-repeat: no-repeat;
-}
-.master03 ~ section {
-  #{headings(1,6)} {
-    color: #238BCA;
-  }
-}
-
-.reveal .slide-background.master04 {
-  background: url('../../lib/img/04_corner_top_right.svg') top right,
-              url('../../lib/img/04_corner_top_left.svg') top left;
-  background-color: #2C97A6;
-  background-repeat: no-repeat;
-}
-.master04 ~ section {
-  #{headings(1,6)} {
-    color: #2C97A6;
-  }
-}
-
-.reveal .slide-background.master05 {
-  background: url('../../lib/img/05_corner_top_right.svg') top right,
-              url('../../lib/img/05_corner_top_left.svg') top left;
-  background-color: #69B978;
-  background-repeat: no-repeat;
-}
-.master05 ~ section {
-  #{headings(1,6)} {
-    color: #69B978;
-  }
-}
-
-@for $i from 1 through 5 {
-  .master0#{$i} {
-    color: white !important;
-    #{headings(1,6)} {
-      color: white !important;
-    }
-  }
-}
