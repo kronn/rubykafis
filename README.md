@@ -1,4 +1,4 @@
-# RubyKafi 56.0
+# RubyKafi
 
 ![Ruby](ruby.png)
 
@@ -7,6 +7,11 @@
 1. Install reveal-md: `sudo npm install -g reveal-md`
 2. Install dependencies `npm install`
 3. Open the presentation: `reveal-md versions.md --theme puzzle`
+
+# Other Presentations
+
+- reveal-md versions-2020.md
+- reveal-md migrations.md
 
 # Further Information
 
