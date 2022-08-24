@@ -7,7 +7,8 @@
     "build": "node-sass --watch theme/source/puzzle.scss theme/puzzle.css",
     "reveal-md": "reveal-md versions.md --theme puzzle",
     "versions-2020": "reveal-md versions-2020.md",
-    "migrations": "reveal-md migrations.md"
+    "migrations": "reveal-md migrations.md",
+    "hitobito": "reveal-md hitobito-techdive.md"
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,8 @@
   },
   "homepage": "https://github.com/puzzle/pitc-revealjs-theme#readme",
   "devDependencies": {
-    "reveal-md": "^4.1.6",
+    "reveal-md": "^5.1.2",
+    "puppeteer": "10.0.0",
     "node-sass": "^4.12.0"
   }
 }
