@@ -10,9 +10,10 @@
 
 ## Other Presentations
 
-- reveal-md versions-2020.md
-- reveal-md migrations.md
-- reveal-md hitobito-techdive.md
+- npm run versions-2020
+- npm run migrations
+- npm run hitobito
+- npm run versions-2024
 
 ## Further Information
 

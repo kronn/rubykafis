@@ -7,6 +7,7 @@
     "build": "node-sass --watch theme/source/puzzle.scss theme/puzzle.css",
     "reveal-md": "reveal-md versions.md --theme puzzle",
     "versions-2020": "reveal-md versions-2020.md",
+    "versions-2024": "reveal-md versions-2024.md",
     "migrations": "reveal-md migrations.md",
     "hitobito": "reveal-md hitobito-techdive.md"
   },

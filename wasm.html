@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://cdn.jsdelivr.net/npm/@ruby/3.3-wasm-wasi@2.4.1/dist/browser.script.iife.js"></script>
+  <script type="text/ruby">
+    require "js"
+
+    puts RUBY_VERSION # printed to the browser console
+
+    JS.global[:document].write "Hello World<br>"
+
+    JS.global[:document].write "Hoi Puzzle, ig ha #{RUBY_VERSION}<br>"
+
+    result = (2024 / 50) * ( RUBY_VERSION.split('.').shift.length ) + 2
+    JS.global[:document].write result
+  </script>
+</html>
