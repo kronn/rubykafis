@@ -455,10 +455,10 @@ Frohe Weihnachten, schöne Ferien und viel Spaß bei der Programmierung mit Ruby
 # Links
 
 - https://ruby-lang.org
-- <a href="https://www.youtube.com/watch?v=2aVyTtxs0GU">Object Shapes</a>
-- <a href="https://rubykaigi.org/2023/presentations/spikeolaf.html">The future vision of Ruby Parser</a>
-- <a href="https://github.com/ruby/irb">IRB</a>
-- <a href="https://github.com/ruby/ruby/blob/master/doc/reline/face.md">Reline::Face</a>
-- [Exploring `it` default block param warning in Ruby 3.3](https://allaboutcoding.ghinda.com/exploring-it-default-block-param-warning-in-ruby-33)
+- Object Shapes: https://www.youtube.com/watch?v=2aVyTtxs0GU
+- The future vision of Ruby Parser: https://rubykaigi.org/2023/presentations/spikeolaf.html
+- https://github.com/ruby/irb
+- Reline::Face https://github.com/ruby/ruby/blob/master/doc/reline/face.md
+- https://allaboutcoding.ghinda.com/exploring-it-default-block-param-warning-in-ruby-33
 
 <!-- .slide: class="master01" -->
