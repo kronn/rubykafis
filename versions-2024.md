@@ -1,11 +1,32 @@
 ---
-title: Ruby Version v2024
+title: Ruby Versions v2024
 theme: theme/puzzle.css
 revealOptions:
     transition: 'fade'
 ---
 
 # Ruby Kafi Januar 2024
+
+<!-- .slide: class="master01" -->
+
+---
+
+# RailsHöck März 2024
+
+<!-- .slide: class="master01" -->
+
+----
+
+# `whoami`
+
+<ul>
+<li class="fragment">Matthias Viehweger
+<li class="fragment">Ruby seit 1.8.7
+<li class="fragment">Rails seit 2.3
+<li class="fragment">Puzzle ITC seit 2016
+<li class="fragment">github.com/kronn
+<li class="fragment">@kronn@ruby.social
+</ul>
 
 <!-- .slide: class="master01" -->
 
