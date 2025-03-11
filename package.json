@@ -9,6 +9,7 @@
     "versions-2020": "reveal-md versions-2020.md",
     "versions-2024": "reveal-md versions-2024.md",
     "versions-2024-en": "reveal-md versions-2024-en.md",
+    "versions-2025": "reveal-md versions-2025.md",
     "migrations": "reveal-md migrations.md",
     "hitobito": "reveal-md hitobito-techdive.md"
   },
